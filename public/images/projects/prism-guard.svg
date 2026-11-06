@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="pg-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <linearGradient id="pg-accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1d4ed8" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+    <linearGradient id="card-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.9" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#pg-bg)" />
+
+  <!-- Subtle grid lines -->
+  <g stroke="#334155" stroke-width="1" opacity="0.25">
+    <line x1="0" y1="90" x2="800" y2="90" />
+    <line x1="0" y1="180" x2="800" y2="180" />
+    <line x1="0" y1="270" x2="800" y2="270" />
+    <line x1="0" y1="360" x2="800" y2="360" />
+    <line x1="200" y1="0" x2="200" y2="450" />
+    <line x1="400" y1="0" x2="400" y2="450" />
+    <line x1="600" y1="0" x2="600" y2="450" />
+  </g>
+
+  <!-- App Header Bar -->
+  <rect x="30" y="24" width="740" height="52" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1" />
+  <!-- Shield Icon -->
+  <g transform="translate(48, 38)">
+    <path d="M12 2L4 5v6.5c0 5 3.5 9.7 8 10.5 4.5-.8 8-5.5 8-10.5V5l-8-3z" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M9 12l2 2 4-4" fill="none" stroke="#34d399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="76" y="56" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="700" letter-spacing="0.5">PRISM-GUARD</text>
+  <rect x="200" y="40" width="95" height="20" rx="10" fill="#1d4ed8" fill-opacity="0.3" stroke="#3b82f6" stroke-width="1" />
+  <text x="210" y="54" fill="#93c5fd" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600">Client Portal</text>
+
+  <!-- Header Nav Pills -->
+  <rect x="490" y="38" width="70" height="24" rx="6" fill="#334155" />
+  <text x="502" y="54" fill="#e2e8f0" font-family="system-ui, -apple-system, sans-serif" font-size="11">Dashboard</text>
+  <rect x="570" y="38" width="70" height="24" rx="6" fill="#1e293b" />
+  <text x="583" y="54" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="11">Incidents</text>
+  <rect x="650" y="38" width="100" height="24" rx="6" fill="#1d4ed8" />
+  <text x="664" y="54" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600">+ New Report</text>
+
+  <!-- Left Card: Incident Status & NLP Analytics -->
+  <rect x="30" y="94" width="450" height="326" rx="12" fill="url(#card-grad)" stroke="#334155" stroke-width="1" />
+  <text x="52" y="128" fill="#f8fafc" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="600">Incident Reports &amp; Dispatch Monitoring</text>
+  <text x="52" y="148" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="12">NLP-Assisted Triage · Praise Security &amp; Investigation Agency Inc.</text>
+
+  <!-- Metric Badges -->
+  <g transform="translate(52, 168)">
+    <rect width="115" height="64" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="12" y="24" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">TOTAL POSTS</text>
+    <text x="12" y="50" fill="#ffffff" font-family="system-ui, sans-serif" font-size="22" font-weight="700">48</text>
+  </g>
+  <g transform="translate(182, 168)">
+    <rect width="115" height="64" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="12" y="24" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">ACTIVE GUARDS</text>
+    <text x="12" y="50" fill="#34d399" font-family="system-ui, sans-serif" font-size="22" font-weight="700">124</text>
+  </g>
+  <g transform="translate(312, 168)">
+    <rect width="138" height="64" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="12" y="24" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">RESOLVED RATIO</text>
+    <text x="12" y="50" fill="#60a5fa" font-family="system-ui, sans-serif" font-size="22" font-weight="700">98.4%</text>
+  </g>
+
+  <!-- Recent Activity Stream -->
+  <rect x="52" y="252" width="406" height="44" rx="6" fill="#0f172a" stroke="#1e293b" />
+  <circle cx="74" cy="274" r="5" fill="#34d399" />
+  <text x="92" y="271" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="12" font-weight="500">Incident #1084 - Perimeter Log Verified</text>
+  <text x="92" y="286" fill="#64748b" font-family="system-ui, sans-serif" font-size="10">Gate 2 Post · Groq AI Tag: Resolved · 4 mins ago</text>
+
+  <rect x="52" y="306" width="406" height="44" rx="6" fill="#0f172a" stroke="#1e293b" />
+  <circle cx="74" cy="328" r="5" fill="#60a5fa" />
+  <text x="92" y="325" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="12" font-weight="500">Shift Turnover Completed - Delta Sector</text>
+  <text x="92" y="340" fill="#64748b" font-family="system-ui, sans-serif" font-size="10">Supervisor Verified · 12 Security Personnel</text>
+
+  <rect x="52" y="360" width="406" height="44" rx="6" fill="#0f172a" stroke="#1e293b" />
+  <circle cx="74" cy="382" r="5" fill="#fbbf24" />
+  <text x="92" y="379" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="12" font-weight="500">Daily Guard Roster Synchronized</text>
+  <text x="92" y="394" fill="#64748b" font-family="system-ui, sans-serif" font-size="10">Supabase Auth &amp; PostgreSQL Synced</text>
+
+  <!-- Right Column Cards: Mobile App Preview & AI Assist -->
+  <rect x="500" y="94" width="270" height="326" rx="12" fill="url(#card-grad)" stroke="#334155" stroke-width="1" />
+  <text x="520" y="128" fill="#f8fafc" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600">Client Portal &amp; AI Assist</text>
+  
+  <rect x="520" y="146" width="230" height="96" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1" />
+  <text x="534" y="170" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="11" font-weight="600">AI Report Synthesis</text>
+  <text x="534" y="188" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">Powered by Llama 3.1 &amp; Groq</text>
+  <rect x="534" y="200" width="202" height="6" rx="3" fill="#334155" />
+  <rect x="534" y="200" width="160" height="6" rx="3" fill="#3b82f6" />
+  <text x="534" y="226" fill="#64748b" font-family="system-ui, sans-serif" font-size="10">Categorization accuracy 96.8%</text>
+
+  <rect x="520" y="254" width="230" height="150" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1" />
+  <text x="534" y="278" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="11" font-weight="600">Deployment Stacks</text>
+  
+  <g transform="translate(534, 292)">
+    <rect width="66" height="20" rx="4" fill="#1e293b"/>
+    <text x="8" y="14" fill="#93c5fd" font-family="system-ui, sans-serif" font-size="9">React.js</text>
+  </g>
+  <g transform="translate(606, 292)">
+    <rect width="70" height="20" rx="4" fill="#1e293b"/>
+    <text x="8" y="14" fill="#93c5fd" font-family="system-ui, sans-serif" font-size="9">React Native</text>
+  </g>
+  <g transform="translate(534, 318)">
+    <rect width="66" height="20" rx="4" fill="#1e293b"/>
+    <text x="8" y="14" fill="#a7f3d0" font-family="system-ui, sans-serif" font-size="9">Supabase</text>
+  </g>
+  <g transform="translate(606, 318)">
+    <rect width="70" height="20" rx="4" fill="#1e293b"/>
+    <text x="8" y="14" fill="#fde68a" font-family="system-ui, sans-serif" font-size="9">Express.js</text>
+  </g>
+  <g transform="translate(534, 344)">
+    <rect width="66" height="20" rx="4" fill="#1e293b"/>
+    <text x="8" y="14" fill="#f472b6" font-family="system-ui, sans-serif" font-size="9">Vercel</text>
+  </g>
+  <g transform="translate(606, 344)">
+    <rect width="70" height="20" rx="4" fill="#1e293b"/>
+    <text x="8" y="14" fill="#c084fc" font-family="system-ui, sans-serif" font-size="9">Groq API</text>
+  </g>
+
+  <rect x="534" y="374" width="202" height="22" rx="4" fill="#1d4ed8" fill-opacity="0.3" stroke="#3b82f6" stroke-width="1" />
+  <text x="560" y="389" fill="#93c5fa" font-family="system-ui, sans-serif" font-size="10" font-weight="600">✓ Turn-over Ready at Defense</text>
+</svg>

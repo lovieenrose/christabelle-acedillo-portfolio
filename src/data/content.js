@@ -7,13 +7,13 @@
 export const profile = {
   name: 'Christabelle Jaynee S.C. Acedillo',
   shortName: 'Christabelle Acedillo',
+  avatar: '/images/profile.PNG', // your profile photo at public/images/profile.PNG
   headline: 'BS Information Technology student specializing in Web and Mobile Applications',
   intro:
     'I build web and mobile apps that people can actually use. I am looking for internships in software development, web development, mobile development, and UI/UX design.',
   focus: ['Software development', 'Web development', 'Mobile development', 'UI/UX design'],
   location: 'Quezon City, Philippines',
   email: 'belleacedillo@gmail.com',
-  phone: '+63 9202073286',
   linkedin: 'https://linkedin.com/in/itschristabelle',
   github: 'https://github.com/lovieenrose',
   resume: '/resume.pdf', // put your PDF at public/resume.pdf
@@ -59,6 +59,7 @@ export const projects = [
     title: 'PRISM-GUARD',
     subtitle: 'HRIS and Client Management System',
     period: 'Capstone · Sept 2025 – Nov 2026',
+    image: '/images/projects/prism-guard.svg', // Preview screenshot in public/images/projects/
     description:
       'A web and mobile HRIS and Client Management System with NLP-enhanced incident reporting for Praise Security & Investigation Agency Inc., a private security agency in Parañaque City. Built by a 4-member team and deemed ready for client turnover at thesis defense.',
     role: 'Client Portal Developer',
@@ -73,14 +74,19 @@ export const projects = [
       'Firebase Cloud Messaging', 'Cloudinary', 'Google Maps and Places', 'Vercel', 'Render', 'Git',
     ],
     links: [
-      { label: 'GitHub', url: '[GitHub link, if public]' },
-      { label: 'Live demo', url: '[Live demo, if available]' },
+      { label: 'Live Demo (Client Portal)', url: 'https://prism-guard.vercel.app/login' },
+      { label: 'Live Demo (Promo Site)', url: 'https://psiai.vercel.app/' },
+      { label: 'GitHub (Web)', url: 'https://github.com/PhonsekalLaure/prism-guard-web' },
+      { label: 'GitHub (Mobile)', url: 'https://github.com/PhonsekalLaure/prism-guard-mobile' },
+      { label: 'GitHub (API)', url: 'https://github.com/PhonsekalLaure/prism-guard-api' },
+      { label: 'GitHub (Promo)', url: 'https://github.com/PhonsekalLaure/prism-guard-promo' },
     ],
   },
   {
     title: 'The Catalog Library',
     subtitle: 'Library Management System',
     period: '2-person team project · June – July 2025',
+    image: '/images/projects/the-catalog-library.svg', // Preview screenshot in public/images/projects/
     description:
       'A web-based library catalog and borrowing system with separate admin and student interfaces. Features: book cataloging, user management, and borrowing and return tracking.',
     role: 'Co-Developer',
@@ -94,6 +100,7 @@ export const projects = [
     title: 'Thrifster',
     subtitle: 'E-commerce platform for thrifted clothes',
     period: '[Date / team size]',
+    image: '/images/projects/thrifster.svg', // Preview screenshot in public/images/projects/
     description: 'A web-based e-commerce platform for thrifted clothes.',
     role: 'Co-Developer. Built the add-to-cart feature.',
     tech: ['PHP', '[other technologies]'],
@@ -103,6 +110,7 @@ export const projects = [
     title: 'Dear Dango',
     subtitle: 'Mobile diary app for Android',
     period: '[Date / team size]',
+    image: '/images/projects/dear-dango.svg', // Preview screenshot in public/images/projects/
     description: 'A mobile diary app for Android. Features: [features]',
     role: '[role]',
     tech: ['Kotlin', 'Android Studio'],
