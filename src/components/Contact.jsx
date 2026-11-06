@@ -45,7 +45,7 @@ export default function Contact() {
         <Reveal>
           <div>
             <p className="max-w-md text-lg leading-relaxed text-slate-700 dark:text-slate-300">
-              Hiring for an internship? Send me a message or reach me directly.
+              Have a project in mind or want to connect? Send me a message—I’d love to hear from you.
             </p>
             <ul className="mt-6 space-y-4">
               {links.map(({ icon: Icon, label, href }) => (

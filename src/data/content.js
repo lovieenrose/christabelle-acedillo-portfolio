@@ -59,7 +59,18 @@ export const projects = [
     title: 'PRISM-GUARD',
     subtitle: 'HRIS and Client Management System',
     period: 'Capstone · Sept 2025 – Nov 2026',
-    image: '/images/projects/prism-guard.svg', // Preview screenshot in public/images/projects/
+    images: [
+      {
+        src: '/images/projects/prism-guard.png',
+        label: 'Client Portal Dashboard',
+        caption: 'Client Portal — Incident reporting & personnel monitoring',
+      },
+      {
+        src: '/images/projects/prism-guard-mobile.png',
+        label: 'Mobile View',
+        caption: 'Mobile App — Guard reporting & dispatch interface',
+      },
+    ],
     description:
       'A web and mobile HRIS and Client Management System with NLP-enhanced incident reporting for Praise Security & Investigation Agency Inc., a private security agency in Parañaque City. Built by a 4-member team and deemed ready for client turnover at thesis defense.',
     role: 'Client Portal Developer',
@@ -74,19 +85,25 @@ export const projects = [
       'Firebase Cloud Messaging', 'Cloudinary', 'Google Maps and Places', 'Vercel', 'Render', 'Git',
     ],
     links: [
-      { label: 'Live Demo (Client Portal)', url: 'https://prism-guard.vercel.app/login' },
       { label: 'Live Demo (Promo Site)', url: 'https://psiai.vercel.app/' },
+      { label: 'Live Demo (Admin & Client Portal)', url: 'https://prism-guard.vercel.app/login' },
+      { label: 'GitHub (Promo)', url: 'https://github.com/PhonsekalLaure/prism-guard-promo' },
       { label: 'GitHub (Web)', url: 'https://github.com/PhonsekalLaure/prism-guard-web' },
       { label: 'GitHub (Mobile)', url: 'https://github.com/PhonsekalLaure/prism-guard-mobile' },
       { label: 'GitHub (API)', url: 'https://github.com/PhonsekalLaure/prism-guard-api' },
-      { label: 'GitHub (Promo)', url: 'https://github.com/PhonsekalLaure/prism-guard-promo' },
     ],
   },
   {
     title: 'The Catalog Library',
     subtitle: 'Library Management System',
     period: '2-person team project · June – July 2025',
-    image: '/images/projects/the-catalog-library.svg', // Preview screenshot in public/images/projects/
+    images: [
+      {
+        src: '/images/projects/the-catalog-library.png',
+        label: 'Library Catalog System',
+        caption: 'Book cataloging, user management & borrowing tracker',
+      },
+    ],
     description:
       'A web-based library catalog and borrowing system with separate admin and student interfaces. Features: book cataloging, user management, and borrowing and return tracking.',
     role: 'Co-Developer',
@@ -98,19 +115,37 @@ export const projects = [
   },
   {
     title: 'Thrifster',
-    subtitle: 'E-commerce platform for thrifted clothes',
-    period: '[Date / team size]',
-    image: '/images/projects/thrifster.svg', // Preview screenshot in public/images/projects/
-    description: 'A web-based e-commerce platform for thrifted clothes.',
-    role: 'Co-Developer. Built the add-to-cart feature.',
-    tech: ['PHP', '[other technologies]'],
+    subtitle: 'E-commerce Platform for Thrifted Clothing',
+    period: 'March 2026 · 5-person team project',
+    images: [
+      {
+        src: '/images/projects/thrifster-catalog.png',
+        label: 'Product Catalog',
+        caption: 'Product Catalog — Search, filter & browse thrifted items',
+      },
+      {
+        src: '/images/projects/thrifster-details.png',
+        label: 'Product Details',
+        caption: 'Product Details — Item specifications, pricing & add-to-cart',
+      },
+    ],
+    description:
+      'A web-based platform for buying thrifted clothing, featuring product search and filtering, a session-based shopping cart, checkout, order history, and an admin dashboard for product and order management.',
+    role: 'Co-Developer — Developed the Product Catalog and Product Details pages and collaborated on backend logic, CSS styling, and database design.',
+    tech: ['PHP', 'CodeIgniter', 'MySQL', 'phpMyAdmin', 'JavaScript', 'CSS', 'Bootstrap'],
     links: [{ label: 'GitHub', url: '[GitHub link]' }],
   },
   {
     title: 'Dear Dango',
     subtitle: 'Mobile diary app for Android',
     period: '[Date / team size]',
-    image: '/images/projects/dear-dango.svg', // Preview screenshot in public/images/projects/
+    images: [
+      {
+        src: '/images/projects/dear-dango.png',
+        label: 'Mobile Diary UI',
+        caption: 'Android Mobile Diary & mood journaling interface',
+      },
+    ],
     description: 'A mobile diary app for Android. Features: [features]',
     role: '[role]',
     tech: ['Kotlin', 'Android Studio'],
@@ -145,7 +180,7 @@ export const education = [
   {
     school: 'FEU Institute of Technology',
     program: 'BS Information Technology, Specialization in Web and Mobile Applications',
-    period: 'August 2023 – Expected [Month Year]',
+    period: 'August 2023 – Expected September 2027',
   },
   {
     school: 'St. Patrick School of Quezon City',

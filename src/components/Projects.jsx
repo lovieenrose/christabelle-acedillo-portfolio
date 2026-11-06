@@ -1,7 +1,7 @@
 import { ExternalLink, Github } from 'lucide-react'
 import Section from './Section'
 import Reveal from './Reveal'
-import ProjectImage from './Img'
+import ProjectCarousel from './ProjectCarousel'
 import { projects } from '../data/content'
 
 const isUrl = (u) => /^https?:\/\//.test(u)
@@ -61,6 +61,8 @@ const Role = ({ role }) => (
 )
 
 function Featured({ p }) {
+  const images = p.images || (p.image ? [p.image] : [])
+
   return (
     <article className="group rounded-2xl border-2 border-blue-700 bg-white p-6 shadow-sm transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-xl dark:border-blue-400 dark:bg-slate-900 sm:p-8 motion-reduce:hover:transform-none">
       <div className="mb-4 flex flex-wrap items-center justify-between gap-2">
@@ -85,7 +87,7 @@ function Featured({ p }) {
           </div>
         </div>
         <div className="lg:col-span-6">
-          <ProjectImage src={p.image} alt={`${p.title} preview screenshot`} title={p.title} featured />
+          <ProjectCarousel images={images} title={p.title} featured />
         </div>
       </div>
 
@@ -103,8 +105,9 @@ export default function Projects() {
   return (
     <Section id="projects" title="Projects" alt>
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-        {projects.map((p) =>
-          p.featured ? (
+        {projects.map((p) => {
+          const images = p.images || (p.image ? [p.image] : [])
+          return p.featured ? (
             <Reveal key={p.title} className="md:col-span-2 lg:col-span-3">
               <Featured p={p} />
             </Reveal>
@@ -112,7 +115,7 @@ export default function Projects() {
             <Reveal key={p.title} className="h-full">
               <article className="group panel flex h-full flex-col transition-all duration-300 ease-out hover:-translate-y-1 hover:border-slate-300 hover:shadow-lg dark:hover:border-slate-700 motion-reduce:hover:transform-none">
                 <div className="mb-4">
-                  <ProjectImage src={p.image} alt={`${p.title} preview screenshot`} title={p.title} />
+                  <ProjectCarousel images={images} title={p.title} />
                 </div>
                 <h3 className="text-xl font-bold">{p.title}</h3>
                 <p className="mt-1 text-sm font-medium text-slate-900 dark:text-slate-100">{p.subtitle}</p>
@@ -128,7 +131,7 @@ export default function Projects() {
               </article>
             </Reveal>
           )
-        )}
+        })}
       </div>
     </Section>
   )
