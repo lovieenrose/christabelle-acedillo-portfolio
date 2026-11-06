@@ -61,9 +61,19 @@ export const projects = [
     period: 'Capstone · Sept 2025 – Nov 2026',
     images: [
       {
-        src: '/images/projects/prism-guard.png',
-        label: 'Client Portal Dashboard',
+        src: '/images/projects/prism-guard-promo.png',
+        label: 'Promotional Website',
+        caption: 'Promotional Website — Landing page for Praise Security & Investigation Agency Inc.',
+      },
+      {
+        src: '/images/projects/prism-guard-client.png',
+        label: 'Client Portal',
         caption: 'Client Portal — Incident reporting & personnel monitoring',
+      },
+      {
+        src: '/images/projects/prism-guard-admin.png',
+        label: 'Admin Portal',
+        caption: 'Admin Portal — Employee management & deployment tracking',
       },
       {
         src: '/images/projects/prism-guard-mobile.png',

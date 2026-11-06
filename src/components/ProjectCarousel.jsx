@@ -198,3 +198,4 @@ export default function ProjectCarousel({ images = [], title = '', featured = fa
     </div>
   )
 }
+
