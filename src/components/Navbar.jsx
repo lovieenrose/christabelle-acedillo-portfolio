@@ -11,7 +11,7 @@ export default function Navbar({ dark, toggle }) {
         <ul className="hidden items-center gap-7 lg:flex">
           {nav.map((n) => (
             <li key={n.id}>
-              <a href={`#${n.id}`} className="text-sm font-medium hover:text-blue-700 dark:hover:text-blue-400">{n.label}</a>
+              <a href={`#${n.id}`} className="text-sm font-medium transition-colors duration-200 hover:text-blue-700 dark:hover:text-blue-400">{n.label}</a>
             </li>
           ))}
         </ul>

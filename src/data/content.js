@@ -109,15 +109,25 @@ export const projects = [
     period: '2-person team project · June – July 2025',
     images: [
       {
-        src: '/images/projects/the-catalog-library.png',
-        label: 'Library Catalog System',
-        caption: 'Book cataloging, user management & borrowing tracker',
+        src: '/images/projects/the-catalog-library-home.png',
+        label: 'Home',
+        caption: 'Homepage — System overview and landing',
+      },
+      {
+        src: '/images/projects/the-catalog-library-student.png',
+        label: 'Student Section',
+        caption: 'Student Section — Browse books, borrowing tracking & student account',
+      },
+      {
+        src: '/images/projects/the-catalog-library-admin.png',
+        label: 'Admin Section',
+        caption: 'Admin Section — Book cataloging and inventory oversight',
       },
     ],
     description:
-      'A web-based library catalog and borrowing system with separate admin and student interfaces. Features: book cataloging, user management, and borrowing and return tracking.',
+      'Co-developed the Library Catalog system, focusing on the student-facing features, including student login and registration, book browsing, and the My Borrowed Books section with its related functionality.',
     role: 'Co-Developer',
-    tech: ['PHP', 'MySQL (phpMyAdmin)', 'HTML', 'CSS'],
+    tech: ['PHP', 'HTML', 'CSS', 'MySQL'],
     links: [
       { label: 'GitHub', url: 'https://github.com/lovieenrose/The-Catalog-Library-local-host-version' },
       { label: 'Live demo', url: '[Live demo: not hosted yet]' },
