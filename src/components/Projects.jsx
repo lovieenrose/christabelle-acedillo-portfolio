@@ -124,6 +124,13 @@ export default function Projects() {
                 </p>
                 <p className="mt-3 text-sm leading-relaxed text-slate-700 dark:text-slate-300">{p.description}</p>
                 <Role role={p.role} />
+                {p.highlights && p.highlights.length > 0 && (
+                  <ul className="mt-2 list-disc space-y-1 pl-4 text-xs leading-relaxed text-slate-700 dark:text-slate-300">
+                    {p.highlights.map((h) => (
+                      <li key={h}>{h}</li>
+                    ))}
+                  </ul>
+                )}
                 <Tags tech={p.tech} />
                 <div className="mt-auto pt-4">
                   <ProjectLinks links={p.links} />
