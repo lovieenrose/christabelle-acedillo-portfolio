@@ -10,7 +10,7 @@ export const profile = {
   avatar: '/images/profile.PNG', // your profile photo at public/images/profile.PNG
   headline: 'BS Information Technology student specializing in Web and Mobile Applications',
   intro:
-    'I build web and mobile apps that people can actually use. I am looking for internships in software development, web development, mobile development, and UI/UX design.',
+    'I enjoy turning ideas into practical digital solutions and learning across different areas of IT. I’m open to internship opportunities where I can apply my skills, explore new roles, and contribute to a team.',
   focus: ['Software development', 'Web development', 'Mobile development', 'UI/UX design'],
   location: 'Quezon City, Philippines',
   email: 'belleacedillo@gmail.com',
