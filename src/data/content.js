@@ -29,7 +29,7 @@ export const nav = [
 ]
 
 export const about =
-  "I'm a BS Information Technology student at FEU Institute of Technology, specializing in Web and Mobile Applications. I'm passionate about building web and mobile apps that people can actually use, and I enjoy turning ideas into working systems. I'm always learning new tools and technologies, and I'm looking for opportunities to grow as a developer and contribute to a team."
+  "I'm a BS Information Technology student at FEU Institute of Technology, specializing in Web and Mobile Applications. I enjoy turning ideas into thoughtful, user-friendly applications, with an interest in development, design, and testing. I'm eager to keep learning, strengthen my skills through hands-on experience, and contribute to meaningful projects with a collaborative team."
 
 export const skills = [
   { group: 'Frontend', items: ['HTML', 'CSS', 'JavaScript', 'React', 'Tailwind CSS'] },
