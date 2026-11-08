@@ -125,14 +125,14 @@ export const projects = [
       },
     ],
     description:
-      'The Cat-alog Library is a library management system designed for students and administrators. It enables students to browse library books and view their borrowing records, while providing librarians with tools to manage the book collection and process borrowing and return transactions. Developed by a two-member team, the project’s name reflects the developers’ shared fondness for cats, with a consistent cat-themed interface throughout the system.',
+      'The Cat-alog Library is a library management system that lets students browse books and track borrowing records, and librarians manage collections, loans, and returns. Developed by a two-member team, its name and cat-themed interface reflect the developers’ shared love for cats.',
     role: 'Co-Developer — Student-Facing System Development.',
     highlights: [
-      'Student Login and Registration: Developed the student account registration and login features, enabling students to create accounts and access the system.',
-      'Book Browsing: Developed the Browse Books section, allowing students to explore the library collection and view book information.',
-      'Borrowed Books Management: Developed the My Borrowed Books section, allowing students to view and track their borrowed books and related borrowing information.',
-      'Related Student-Side Functionality: Implemented the supporting functions and navigation across these sections to provide a cohesive student experience.',
-      'Project Documentation and Testing: Collaborated with my development partner to prepare and refine project documentation and conduct system testing to verify functionality and identify issues.'
+      'Developed the student account registration and login features, enabling students to create accounts and access the system.',
+      'Developed the Browse Books section, allowing students to explore the library collection and view book information.',
+      'Developed the My Borrowed Books section, allowing students to view and track their borrowed books and related borrowing information.',
+      'Implemented the supporting functions and navigation across these sections to provide a cohesive student experience.',
+      'Collaborated with my development partner to prepare and refine project documentation and conduct system testing to verify functionality and identify issues.'
     ],
     tech: ['PHP', 'HTML', 'CSS', 'MySQL'],
     links: [
