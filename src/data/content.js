@@ -109,7 +109,6 @@ export const projects = [
       { label: 'GitHub (Promo)', url: 'https://github.com/PhonsekalLaure/prism-guard-promo' },
       { label: 'GitHub (Web)', url: 'https://github.com/PhonsekalLaure/prism-guard-web' },
       { label: 'GitHub (Mobile)', url: 'https://github.com/PhonsekalLaure/prism-guard-mobile' },
-      { label: 'GitHub (API)', url: 'https://github.com/PhonsekalLaure/prism-guard-api' },
     ],
   },
   {
@@ -137,13 +136,14 @@ export const projects = [
       'The Cat-alog Library is a library management system that lets students browse books and track borrowing records, and librarians manage collections, loans, and returns. Developed by a two-member team, its name and cat-themed interface reflect the developers’ shared love for cats.',
     role: 'Co-Developer — Student-Facing System Development.',
     highlights: [
+      'Contributed to the interface design and layout using Canva.',
       'Developed the student account registration and login features, enabling students to create accounts and access the system.',
       'Developed the Browse Books section, allowing students to explore the library collection and view book information.',
       'Developed the My Borrowed Books section, allowing students to view and track their borrowed books and related borrowing information.',
       'Implemented the supporting functions and navigation across these sections to provide a cohesive student experience.',
       'Collaborated with my development partner to prepare and refine project documentation and conduct system testing to verify functionality and identify issues.'
     ],
-    tech: ['PHP', 'HTML', 'CSS', 'MySQL'],
+    tech: ['PHP', 'HTML', 'CSS', 'MySQL', 'Canva'],
     links: [
       { label: 'GitHub', url: 'https://github.com/lovieenrose/The-Catalog-Library' },
       { label: 'Live demo', url: 'https://the-catalog-library.vercel.app/' },
@@ -158,7 +158,13 @@ export const projects = [
     images: [],
     description:
       'A web-based platform for buying thrifted clothing, featuring product search and filtering, a session-based shopping cart, checkout, order history, and an admin dashboard for product and order management.',
-    role: 'Co-Developer — Developed the Product Catalog and Product Details pages and collaborated on backend logic, CSS styling, and database design.',
+    role: 'Co-Developer — Product Catalog & Details Page Development',
+    highlights: [
+      'Developed the Product Catalog page with search, filtering, and responsive item browsing.',
+      'Developed the Product Details page with item specifications, pricing, and add-to-cart functionality.',
+      'Collaborated on backend application logic and session management.',
+      'Contributed to database design and CSS styling across the platform.'
+    ],
     tech: ['PHP', 'CodeIgniter', 'MySQL', 'phpMyAdmin', 'JavaScript', 'CSS', 'Bootstrap'],
     links: [
       { label: 'GitHub', url: 'https://github.com/arixien/thriftster' },
