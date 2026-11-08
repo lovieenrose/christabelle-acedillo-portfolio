@@ -195,6 +195,39 @@ export const projects = [
 
 export const certifications = [
   {
+    name: 'Foundations of Project Management',
+    issuer: 'Google',
+    date: 'Jul 2026',
+    credentialId: 'FOH3GQ4HB52O',
+    url: 'https://www.coursera.org/account/accomplishments/verify/FOH3GQ4HB52O',
+  },
+  {
+    name: 'DevNet Associate',
+    issuer: 'Cisco',
+    date: 'Apr 2026',
+    url: 'https://www.credly.com/badges/0478338d-3f89-47f9-8e7e-94ce8692764b/linked_in_profile',
+  },
+  {
+    name: 'PMI Project Management Ready',
+    issuer: 'Project Management Institute',
+    date: 'Mar 2026',
+    note: 'Expires Mar 2031',
+    credentialId: 'PN2M-uScn',
+    url: 'https://www.certiport.com/portal/pages/credentialverification.aspx',
+  },
+  {
+    name: 'Linux Essentials - Course Completion',
+    issuer: 'Cisco Networking Academy',
+    date: 'Dec 2025',
+    url: 'https://www.credly.com/badges/e4d2c5e6-a8a8-4eda-bc3d-e4faf610b8ba',
+  },
+  {
+    name: 'CCNA: Switching, Routing, and Wireless Essentials - Course Completion',
+    issuer: 'Cisco Networking Academy',
+    date: 'Mar 2025',
+    url: 'https://www.credly.com/badges/78c9f2ed-608d-49bc-ba84-144962abab12',
+  },
+  {
     name: 'Cisco Certified Support Technician Networking (CCST Networking)',
     issuer: 'Cisco',
     date: 'Feb 2025',
@@ -209,18 +242,6 @@ export const certifications = [
     url: 'https://www.certiport.com/portal/pages/credentialverification.aspx',
   },
   {
-    name: 'CCNA: Switching, Routing, and Wireless Essentials - Course Completion',
-    issuer: 'Cisco Networking Academy',
-    date: 'Mar 2025',
-    url: 'https://www.credly.com/badges/78c9f2ed-608d-49bc-ba84-144962abab12',
-  },
-  {
-    name: 'Linux Essentials - Course Completion',
-    issuer: 'Cisco Networking Academy',
-    date: 'Dec 2025',
-    url: 'https://www.credly.com/badges/e4d2c5e6-a8a8-4eda-bc3d-e4faf610b8ba',
-  },
-  {
     name: 'CCNA: Introduction to Networks - Course Completion',
     issuer: 'Cisco Networking Academy',
     date: 'Feb 2025',
@@ -231,27 +252,6 @@ export const certifications = [
     issuer: 'Zuitt - Coding Bootcamp',
     date: 'Jun 2023',
     url: '/certificates/zuitt-frontend.pdf', // Drop certificate PDF at public/certificates/zuitt-frontend.pdf
-  },
-  {
-    name: 'PMI Project Management Ready',
-    issuer: 'Project Management Institute',
-    date: 'Mar 2026',
-    note: 'Expires Mar 2031',
-    credentialId: 'PN2M-uScn',
-    url: 'https://www.certiport.com/portal/pages/credentialverification.aspx',
-  },
-  {
-    name: 'DevNet Associate',
-    issuer: 'Cisco',
-    date: 'Apr 2026',
-    url: 'https://www.credly.com/badges/0478338d-3f89-47f9-8e7e-94ce8692764b/linked_in_profile',
-  },
-  {
-    name: 'Foundations of Project Management',
-    issuer: 'Google',
-    date: 'Jul 2026',
-    credentialId: 'FOH3GQ4HB52O',
-    url: 'https://www.coursera.org/account/accomplishments/verify/FOH3GQ4HB52O',
   },
 ]
 
