@@ -1,4 +1,4 @@
-import { ExternalLink, Github } from 'lucide-react'
+import { Clock, ExternalLink, Github } from 'lucide-react'
 import Section from './Section'
 import Reveal from './Reveal'
 import ProjectCarousel from './ProjectCarousel'
@@ -13,7 +13,15 @@ function ProjectLinks({ links }) {
         const isGithub = l.label.toLowerCase().includes('github')
         return (
           <li key={l.label}>
-            {isUrl(l.url) ? (
+            {l.soon ? (
+              <span
+                className="inline-flex cursor-not-allowed items-center gap-1.5 rounded-md border border-dashed border-slate-300 px-2 py-0.5 text-xs font-medium text-slate-500 dark:border-slate-700 dark:text-slate-400"
+                aria-disabled="true"
+              >
+                <Clock size={13} aria-hidden="true" />
+                {l.label}: Coming soon
+              </span>
+            ) : isUrl(l.url) ? (
               <a
                 href={l.url}
                 target="_blank"
@@ -119,9 +127,11 @@ export default function Projects() {
                 </div>
                 <h3 className="text-xl font-bold">{p.title}</h3>
                 <p className="mt-1 text-sm font-medium text-slate-900 dark:text-slate-100">{p.subtitle}</p>
-                <p className={`mt-1 text-xs ${p.period.startsWith('[') ? 'placeholder' : 'text-slate-600 dark:text-slate-400'}`}>
-                  {p.period}
-                </p>
+                {p.period && (
+                  <p className={`mt-1 text-xs ${p.period.startsWith('[') ? 'placeholder' : 'text-slate-600 dark:text-slate-400'}`}>
+                    {p.period}
+                  </p>
+                )}
                 <p className="mt-3 text-sm leading-relaxed text-slate-700 dark:text-slate-300">{p.description}</p>
                 <Role role={p.role} />
                 {p.highlights && p.highlights.length > 0 && (

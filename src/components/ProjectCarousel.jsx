@@ -1,6 +1,23 @@
-import { useState, useRef, useEffect } from 'react'
+import { useState, useRef } from 'react'
 import { motion, AnimatePresence, useReducedMotion } from 'framer-motion'
 import { ChevronLeft, ChevronRight, Image as ImageIcon } from 'lucide-react'
+
+// Shown when a project has no screenshots yet (or an image fails to load).
+function ComingSoon({ title, featured }) {
+  return (
+    <div
+      className="flex h-full w-full select-none flex-col items-center justify-center bg-gradient-to-br from-slate-100 to-slate-200 p-6 text-center dark:from-slate-900 dark:to-slate-800"
+      role="img"
+      aria-label={`Preview coming soon for ${title}`}
+    >
+      <div className="rounded-full bg-white p-3 shadow-sm dark:bg-slate-800">
+        <ImageIcon size={featured ? 30 : 24} className="text-blue-700 dark:text-blue-400" aria-hidden="true" />
+      </div>
+      <p className="mt-3 text-sm font-semibold text-slate-900 dark:text-white">Preview Coming Soon</p>
+      <p className="mt-1 text-xs text-slate-600 dark:text-slate-400">Screenshots will be added shortly</p>
+    </div>
+  )
+}
 
 function SlideImage({ item, title, featured }) {
   const [error, setError] = useState(false)
@@ -9,27 +26,7 @@ function SlideImage({ item, title, featured }) {
   const caption = typeof item === 'object' && item.caption ? item.caption : null
 
   if (!src || error) {
-    const filename = src ? src.split('/').pop() : 'screenshot.png'
-    return (
-      <div
-        className="flex h-full w-full flex-col items-center justify-center p-6 text-center select-none"
-        role="img"
-        aria-label={`${label} placeholder`}
-      >
-        <div className="rounded-full bg-slate-200/80 p-3 dark:bg-slate-800/80">
-          <ImageIcon size={featured ? 30 : 24} className="text-blue-600 dark:text-blue-400" />
-        </div>
-        <p className="mt-3 text-sm font-semibold text-slate-800 dark:text-slate-200">
-          {label}
-        </p>
-        <p className="mt-1 text-xs text-slate-500 dark:text-slate-400">
-          PNG screenshot placeholder
-        </p>
-        <p className="mt-2 text-[11px] text-slate-400 dark:text-slate-500">
-          Drop PNG at <code className="rounded bg-slate-200 px-1 py-0.5 text-[10px] dark:bg-slate-800 text-slate-700 dark:text-slate-300">public/images/projects/{filename}</code>
-        </p>
-      </div>
-    )
+    return <ComingSoon title={title} featured={featured} />
   }
 
   return (

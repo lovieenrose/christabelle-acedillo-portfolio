@@ -52,7 +52,16 @@ export const skills = [
   },
 ]
 
-// links: use a real https:// URL, or a [placeholder] string. Placeholders show as plain text.
+// ------------------------------------------------------------
+// PROJECTS. To add a project, copy an object below and edit it.
+//   period      optional; hidden when empty
+//   images      [] shows a "Preview Coming Soon" placeholder; otherwise
+//               [{ src: '/images/projects/x.png', label, caption }]
+//   highlights  optional bullet list of contributions
+//   links       { label, url }  -> clickable link (https:// only)
+//               { label, soon: true } -> disabled "Coming soon" badge
+//   featured    true = full-width card (use for one project)
+// ------------------------------------------------------------
 export const projects = [
   {
     featured: true,
@@ -136,7 +145,7 @@ export const projects = [
     ],
     tech: ['PHP', 'HTML', 'CSS', 'MySQL'],
     links: [
-      { label: 'GitHub', url: 'https://github.com/lovieenrose/The-Catalog-Library-local-host-version' },
+      { label: 'GitHub', url: 'https://github.com/lovieenrose/The-Catalog-Library' },
       { label: 'Live demo', url: 'https://the-catalog-library.vercel.app/' },
     ],
   },
@@ -144,39 +153,37 @@ export const projects = [
     title: 'Thrifster',
     subtitle: 'E-commerce Platform for Thrifted Clothing',
     period: 'March 2026 · 5-person team project',
-    images: [
-      {
-        src: '/images/projects/thrifster-catalog.png',
-        label: 'Product Catalog',
-        caption: 'Product Catalog — Search, filter & browse thrifted items',
-      },
-      {
-        src: '/images/projects/thrifster-details.png',
-        label: 'Product Details',
-        caption: 'Product Details — Item specifications, pricing & add-to-cart',
-      },
-    ],
+    // Add screenshots here when ready (Product Catalog and Product Details first), e.g.
+    // { src: '/images/projects/thrifster-catalog.png', label: 'Product Catalog', caption: '...' }
+    images: [],
     description:
       'A web-based platform for buying thrifted clothing, featuring product search and filtering, a session-based shopping cart, checkout, order history, and an admin dashboard for product and order management.',
     role: 'Co-Developer — Developed the Product Catalog and Product Details pages and collaborated on backend logic, CSS styling, and database design.',
     tech: ['PHP', 'CodeIgniter', 'MySQL', 'phpMyAdmin', 'JavaScript', 'CSS', 'Bootstrap'],
-    links: [{ label: 'GitHub', url: '[GitHub link]' }],
+    links: [
+      { label: 'GitHub', url: 'https://github.com/arixien/thriftster' },
+      { label: 'Live demo', soon: true },
+    ],
   },
   {
     title: 'Dear Dango',
-    subtitle: 'Mobile diary app for Android',
-    period: '[Date / team size]',
-    images: [
-      {
-        src: '/images/projects/dear-dango.png',
-        label: 'Mobile Diary UI',
-        caption: 'Android Mobile Diary & mood journaling interface',
-      },
+    subtitle: 'Mobile Diary App for Android',
+    // period omitted until date / team size are confirmed (hidden when empty)
+    images: [],
+    description:
+      'A mobile diary app for Android with username and password sign-in, designed around a friendly, mobile-first interface.',
+    role: 'UI/Visual Design Lead — conceptualized the app design, with support in implementation and testing.',
+    highlights: [
+      'Main contribution: conceptualized the application’s interface and visual design using Canva.',
+      'Fixed and tested button functionality.',
+      'Adjusted layout constraints so the interface adapts to mobile screens and landscape orientation.',
+      'Helped set up username and password functionality.',
     ],
-    description: 'A mobile diary app for Android. Features: [features]',
-    role: '[role]',
-    tech: ['Kotlin', 'Android Studio'],
-    links: [{ label: 'GitHub', url: '[GitHub link]' }],
+    tech: ['Kotlin', 'Android Studio', 'Canva'],
+    links: [
+      { label: 'GitHub', url: 'https://github.com/arixien/Dear_Dango' },
+      { label: 'Live demo', soon: true },
+    ],
   },
 ]
 
